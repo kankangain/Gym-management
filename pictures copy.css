@@ -1,0 +1,211 @@
+/* For header */
+body {
+    background-image: url(Images/background.jp);
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+
+}
+
+body .main{
+    height: 72vh;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    background-color: rgba(52, 52, 52, 0.496);
+    z-index: -1;
+}
+
+.header{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(196,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    height: 15vh;
+    overflow: hidden;
+}
+
+.header .main-img{
+    height: 15.5vh;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.text{
+    color: azure;
+    margin-left: 5%;
+    font-family: "Monoton", sans-serif;
+    font-style: normal;
+    font-size: 4.8vw;
+    vertical-align: middle;
+}
+.text a{
+    text-decoration: none;
+    color: azure;
+}
+
+.insta img,.facebook img{
+    height: 4.5vh;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.logos{
+    margin-right: 60px;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    padding-top: 0.8vh;
+    padding-bottom: 0.8vh;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transform: scale(0.85);
+    vertical-align: middle;
+    transition: ease-in-out 0.3s;
+}
+
+.logos:hover{
+    transform: scale(1.12);
+}
+.Instagram:hover{
+    color: rgba(196,0,0,1);
+}
+.Facebook:hover{
+    color: rgba(196,0,0,1);
+}
+.insta a,.facebook a{
+    text-decoration: none;
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
+}
+
+/* Navigation Bar */
+
+.nav-bar{
+    display: flex;
+    background-color: rgba(240, 248, 255, 1);
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    font-size: 1.2vw;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    transition: ease-in-out 0.2s;
+    padding: 4px;
+}
+
+.homepage:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.pictures:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.about_us:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.login:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.contents .main-img{
+    width: 20vw;
+    margin: 20px;
+}
+
+
+
+/* Pictures */
+
+.main_1{
+
+    padding: 50px;
+}
+.main_1 .gallery_1 img{
+    width: 60vh;
+}
+.main_1 .gallery_1 .desc{
+    opacity: 0;
+    margin-top: -100px;
+    margin-bottom: 0px;
+}
+.main_1 .gallery_1:hover .desc{
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.main_1 .gallery_1{
+    margin: 9px;
+    background-color: azure;
+}
+
+
+
+.main_1 .gallery_2 img{
+    width: 60vh;
+}
+.main_1 .gallery_2 .desc{
+    opacity: 0;
+    margin-top: -100px;
+    margin-bottom: 0px;
+}
+.main_1 .gallery_2:hover .desc{
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.main_1 .gallery_2{
+    margin: 9px;
+    background-color: azure;
+}
+
+
+
+.main_1 .gallery_3 img{
+    width: 60vh;
+}
+.main_1 .gallery_3 .desc{
+    opacity: 0;
+    margin-top: -100px;
+    margin-bottom: 0px;
+}
+.main_1 .gallery_3:hover .desc{
+    opacity: 1;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.main_1 .gallery_3{
+    margin: 9px;
+    background-color: azure;
+}
