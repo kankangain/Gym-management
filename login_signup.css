@@ -1,7 +1,6 @@
 body {
     background-image: url(Images/background.jpg);
-    background-attachment:scroll;
-    background-position: center;
+    background-attachment:fixed;
     background-size:cover;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
@@ -20,8 +19,6 @@ body::before{
     background-color: rgba(91, 91, 91, 0.295);
     z-index: -1;
 }
-/* For header */
-
 .header{
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(196,0,0,1) 100%);
@@ -45,7 +42,7 @@ body::before{
 
 }
 
-.text{
+.header .text{
     color: azure;
     margin-left: 5%;
     font-family: "Monoton", sans-serif;
@@ -97,8 +94,6 @@ body::before{
     font-style: normal;
 }
 
-/* Navigation Bar */
-
 .nav-bar{
     display: flex;
     background-color: rgba(240, 248, 255, 1);
@@ -148,179 +143,76 @@ body::before{
     width: 20vw;
     margin: 20px;
 }
-
-/* Scroll Bar */
-
-::-webkit-scrollbar {
-  width: 12px;
-}
-
-::-webkit-scrollbar-track {
-  background: rgba(196,0,0,1);
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-/* Cards */
-
-
-.contents{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.card_1,.card_2, .card_3{
-    position: relative;
+b{
     text-align: center;
+    font-size: vw;
+    font-weight: bold;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: azure;
+}
+.label{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: azure;
+}
+h1{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    box-shadow: black;
+}
+#align{
+    text-align: left;
+    display:inline-block;
+    width: 50vwpx;
+    text-align: center;
+    font-size: vw;
+    font-weight: bold;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: azure;
+}
+#text{
+    text-decoration-color: black;
+    text-decoration-line: underline;
+    color:rgb(255, 255, 255) ;
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;    
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+#btn{
+    background-color: rgb(157, 171, 67);
+    color: rgb(84, 81, 81);
+    border: rgb(36, 28, 28);
+    padding:10px 10px;
+    font-size:16px;
+    border-radius:10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100;
+}
+.back{
+    text-decoration: none;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.slide{
+   background-color: #a20f0f;
+   border: 2px solid rgb(119, 152, 56);
+   border-radius: 3%;
+   height:330px;width: 200px;
+   padding:25px 25px;
+   text-align:center;
+   cursor: pointer;
+   margin:auto;
+   margin-top: 5vh;
+   display: block;  
+   font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-
-/* Individual Cards */
-
-/* Card 1 */
-.card_1 .image_1 img{
-    position: relative;
-    min-width:40px;
-    width: 95%;
-    height: auto;
-    transform: scale(0.92);
-    border-radius: 20px;
-    top: -40%;
-    z-index: 1;
-}
-
-.card_1{
-    margin-top: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.389);
-    border-radius: 20px;
-    min-width: 250px;
-    width: 27%;
-    height: 50%;
-    transition: ease-in-out 0.3s;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.card_1 .des_1{
-    opacity: 0;
-    transition: opacity ease-in .3s,  margin-bottom ease-in-out .3s,  margin-top ease-in-out .3s;
-    margin-top: -100px;
-    margin-bottom: 0px;
-    transition-delay: 0.1s, 0s, 0s;
-    font-family: "Chakra Petch", sans-serif;
-    font-style: normal;
-    color: rgb(255, 255, 255);
-}
-
-.card_1:hover .des_1{
-    opacity: 1;
-    margin-top: 0px;
-    margin-bottom: 50px;
-}
-
-.card_1:hover{
-    height: 55%;
-    background-color: rgba(196,0,0,1);
-}
-
-/* Card 2 */
-
-.card_2 .image_2 img{
-    position: relative;
-    min-width:40px;
-    width: 95%;
-    height: auto;
-    transform: scale(0.92);
-    border-radius: 20px;
-    top: -40%;
-    z-index: 1;
-}
-
-.card_2{
-    margin-top: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.389);
-    border-radius: 20px;
-    min-width: 250px;
-    width: 27%;
-    height: 50%;
-    transition: ease-in-out 0.3s;
-    background-color: rgba(196,0,0,1);
-}
-
-.card_2 .des_2{
-    opacity: 0;
-    transition: opacity ease-in .3s,  margin-bottom ease-in-out .3s,  margin-top ease-in-out .3s;
-    margin-top: -100px;
-    margin-bottom: 0px;
-    transition-delay: 0.1s, 0s, 0s;
-    font-family: "Chakra Petch", sans-serif;
-    font-style: normal;
-    color: rgb(0, 0, 0);
-}
-
-.card_2:hover .des_2{
-    opacity: 1;
-    margin-top: 0px;
-    margin-bottom: 50px;
-}
-
-.card_2:hover{
-    height: 55%;
-    background-color: rgb(255, 255, 255);
-}
-
-/* Card 3 */
-
-.card_3 .image_3 img{
-    position: relative;
-    min-width:40px;
-    width: 95%;
-    height: auto;
-    transform: scale(0.92);
-    border-radius: 20px;
-    top: -40%;
-    z-index: 1;
-}
-
-.card_3{
-    margin-top: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.389);
-    border-radius: 20px;
-    min-width: 250px;
-    width: 27%;
-    height: 50%;
-    transition: ease-in-out 0.3s;
-    background-color: rgba(255, 255, 255, 0.7);
-}
-
-.card_3 .des_3{
-    opacity: 0;
-    transition: opacity ease-in .3s,  margin-bottom ease-in-out .3s,  margin-top ease-in-out .3s;
-    margin-top: -100px;
-    margin-bottom: 0px;
-    transition-delay: 0.1s, 0s, 0s;
-    font-family: "Chakra Petch", sans-serif;
-    font-style: normal;
-    color:  rgb(255, 255, 255);
-}
-
-.card_3:hover .des_3{
-    opacity: 1;
-    margin-top: 0px;
-    margin-bottom: 50px;
-}
-
-.card_3:hover{
-    height: 55%;
-    background-color:rgba(196,0,0,1);
-}
-
-/* Line over about-us div or section */
 
 .line{
     display: flex;
@@ -335,8 +227,6 @@ body::before{
     background: linear-gradient(90deg, rgba(29,29,29,0) 0%, rgba(255,0,0,1) 50%, rgba(62,0,0,0) 100%); /* Just for visualization */
     padding: 2px;
 }
-
-/* About Us */
 
 .about-us p{
     color: azure;
@@ -365,7 +255,7 @@ body::before{
 .about p{
     font-family: "Fira Sans Extra Condensed", sans-serif;
     font-weight: 250;
-    font-size: 80%;
+    font-size: 70%;
     font-style: normal;
 }
 
@@ -383,20 +273,3 @@ body::before{
     font-family: "Fira Sans Extra Condensed", sans-serif;
     font-size: 70%;
 }
-
-
-
-/* For Small Screen Size*/
-
-
-@media screen and (max-width : 600px) {
-    .contents{
-    flex-direction: column;
-    align-items: center;
-    }
-    body .main{
-        height: 100%;
-    }
-    
-}
-

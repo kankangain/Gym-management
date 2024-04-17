@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+          <title>  Registration form</title>
+          <link rel="stylesheet" href="login_signup.css">
+          <link rel="icon" href="Images/logo.png" type="image/x-icon">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap">
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monoton&display=swap">
+             <style>
+             
+                .form{
+                      background-color:rgba(184, 15, 15, 0.89);
+                      color: rgb(3, 12, 12);
+                      border: 2px solid black;
+                      padding: 20px 20px; 
+                      border-radius: 3%;
+                      margin: auto;
+                      height: 550px;
+                      width: 350px;
+                      text-align: center;
+                      font-family: "Poppins", sans-serif;
+                      font-weight: 500;
+                      font-style: normal;
+                      
+                    }
+                .btn
+                {
+                  margin: auto;
+                  cursor: pointer;
+                }
+            </style> 
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+            
+  </head>
+  <body>
+
+    <div class="header">
+      <div class="text"><a href="index.html">OXXY FITNESS</a></div>
+      <img src="Images/Gym-1.svg" alt="" class="main-img">
+      <div class="logos">
+          <div class="insta">
+              <img src="Images/instalogo.png" alt="">
+              <a href="https://youtu.be/dQw4w9WgXcQ" class="Instagram">Instagram</a><br>
+          </div>
+          <div class="facebook">
+              <img src="Images/fblogo.png" alt="">
+              <a href="https://youtu.be/dQw4w9WgXcQ" class="Facebook">Facebook</a><br>
+          </div>    
+      </div>
+  </div>
+
+        <div class="nav-bar">
+            <a href="index.html" class="homepage">Home Page</a>
+            <a href="pictures.html" class="pictures">Pictures</a>
+            <a href="about-us.html" class="about_us">About Us</a>
+            <a href="login.html" class="login">Login</a>
+        </div>
+
+    <form >
+         <h1 style="text-align: center; color: #c31837;font-size:xx-large; text-decoration: underline;">Register your self</h1>
+
+        <div  class="form">  
+
+      <label for="name"><b>Name:</b></label>
+      <input type="text" id="name" placeholder="Your Name.."><br><br>
+
+      <label><b> Gender:</b></label>
+      <label for="text" >Male</label>
+      <input type="Radio" name="gender" id="male" value="Male"required>
+      <label for="text" >Female</label>
+      <input type="Radio" name="gender" id="female" value="Female"required >
+      <label for="text" >others</label>
+      <input type="Radio" name="gender" id="others" value="Others"required> <br><br>
+      
+      <label for="course" ><b> Are you Athlete?</b></label>
+      <select >
+        <option value="default" title="Default choice">default</option>
+        <option value="yes" title="yes"> YES</option>
+        <option value="No" title="No"> NO </option>
+      </select><br><br>
+      <label for="date of birth"title="Date of Birth" > <b>Date of Birth:</b></label>
+       <input type="date" placeholder="your DOB" required><br><br>
+      <label for="Phone" ><b> Phone No: </b> </label>
+      <input type="text"  name="country code" option value="+91"  size="1"  placeholder="phone number" >
+      <input type="text" name="phone" required   size=20 placeholder="Phone no."required ><br>
+      <label style="padding: 20px;" for="Address" required ><b>Address:</b></label>
+      <textarea for="address" id="address" cols="30" rows="5" placeholder="current address"required></textarea><br><br>
+      <label for="Email" required><b>Email:</label>
+      <input type="email" placeholder="example@gmail.com"required ><br><br>
+      <label for="password" required><b>Password:</b></label>
+      <input type="password" placeholder="Current password"required><br><br>
+      <label for="retype password" required><b>Confirm_Password:</b></label>
+      <input type="password" placeholder="Retype password"required><br><br>
+
+      <input type="checkbox"id="name" required> Agree all term &Conditions<br>
+
+
+    <div class="btn">
+        
+        <button for="submit" style="color: rgb(16, 163, 53);background-color: rgb(145, 201, 144);" size="45" ><b>Submit</b></button>
+
+        <button type="reset" style="color:rgb(173, 153, 153) ; background-color: rgb(211, 13, 13);"><b>Cancel</b></button>
+
+        <button type="button" style="color:rgb(100, 219, 255) ; background-color: rgb(101, 245, 255);"><a href="login.html" class="back">Back to login page</a></button>
+    </div>
+
+
+  </div>
+
+    </form>
+
+
+    <div class="about-us">
+      <div class="line">
+          <div class="border"></div>
+      </div>
+      <div class="about">
+          <p>We Kankan Gain,Pritam Paul and Yuwansh Kumar is made this website as a project given by <a href="https://euphoriagenx.com">Euphoria Genx</a> <br>
+              My (Kankan Gain)'s Social media handels are :
+              <a href="https://www.instagram.com/kankan_gain/"><img src="Images/instalogo.png" alt="">Instagram</a>
+              <a href="https://www.facebook.com/kankan.gain.0/" class="socials"><img src="Images/fblogo.png" alt="">Facebook</a>
+          </p>
+
+          <p> My (Pritam Paul)'s Social media handels are :
+              <a href="https://www.instagram.com/paulpritam2004?igsh=MWwzZ2ozN2wyM2Qwag=="><img src="Images/instalogo.png" alt="">Instagram</a>
+              <a href="https://www.facebook.com/profile.php?id=100071673220184&sfnsn=wiwspwa&mibextid=RUbZ1f" class="socials_2"><img src="Images/fblogo.png" alt="">Facebook</a>
+          </p>
+          <p> My (Yuwansh Kumar)'s Social media handels are :
+              <a href="https://www.instagram.com/yuwansh_kr/"><img src="Images/instalogo.png" alt="">Instagram</a>
+              <a href="https://www.facebook.com/yuwansh.kumar.12" class="socials_3"><img src="Images/fblogo.png" alt="">Facebook</a>
+          </p>
+      </div>
+  </div>
+
+  <div class="Copyright">©2024 Kankan Gain,Pritam Paul,Yuwansh Kumar INDIA, Inc. All rights reserved.</div>
+
+  </body>
+</html>

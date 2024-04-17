@@ -2,11 +2,11 @@
 body {
     background-image: url(Images/background.jpg);
     background-attachment:scroll;
-    background-size:cover;
     background-position: center;
+    background-size:cover;
     background-repeat: no-repeat;
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
 }
 
 body .main{
@@ -15,14 +15,18 @@ body .main{
 
 body::before{
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height:;
-    background-color: rgba(52, 52, 52, 0.496);
+    height: 100%;
+    width: 100vw;
+    background-color: rgba(91, 91, 91, 0.295);
     z-index: -1;
 }
+
+
+/* For header */
+
 
 .header{
     background: rgb(0,0,0);
@@ -32,14 +36,19 @@ body::before{
     align-items: center;
     border-radius: 20px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
-    height: 15vh;
+    height: auto;
+    width: 97vw;
+    position: relative;
     overflow: hidden;
 }
 
 .header .main-img{
-    height: 15.5vh;
-    vertical-align: middle;
-    padding: 5px;
+    height: 18.5vw;
+    vertical-align:top;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+
 }
 
 .text{
@@ -56,17 +65,17 @@ body::before{
 }
 
 .insta img,.facebook img{
-    height: 4.5vh;
+    height: 2.5vh;
     vertical-align: middle;
     padding: 5px;
 }
 
 .logos{
-    margin-right: 60px;
+    margin-right: 2vw;
     padding-left: 0.8vw;
     padding-right: 0.8vw;
-    padding-top: 0.8vh;
-    padding-bottom: 0.8vh;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
@@ -88,6 +97,7 @@ body::before{
     text-decoration: none;
     text-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
     font-weight: bold;
+    font-size: 85%;
     color: rgb(0, 0, 0);
     font-family: "Chakra Petch", sans-serif;
     font-style: normal;
@@ -107,7 +117,7 @@ body::before{
 
 .nav-bar a{
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 85%;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 500;
     font-style: normal;
@@ -145,37 +155,86 @@ body::before{
     margin: 20px;
 }
 
+/* Scroll Bar */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(196,0,0,1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 /* Grid/Images */
 
 .gird {
 	display: grid;
 	grid-template-rows: repeat(auto-fit, 1fr);
-	grid-template-columns: repeat(3, 1fr);
-	grid-row-gap: 8vh;
-    grid-column-gap: 8vh;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	justify-items: center;
 	align-items: center;
-	justify-content: stretch;
-	align-content: stretch;
-    margin: 50px;
+	grid-row-gap: 8vh;
+    grid-column-gap: 8vh;
+    margin-top: 4vw;
+
 }
 .image img{
-    height: 30vh;
-    object-fit: cover;
-    border-radius: 20px;
+    height: 12.4em;
+    width: 100%;
+    border-radius: 1.5vw;
 }
-
+.fade::before{
+    content: "";
+    position: absolute;
+    top: 10;
+    left: 10;
+    border-radius: 1.5vw;
+    width: 98%;
+    height: 12.4em;
+    background-color: rgba(255, 0, 0, 0); /* Set transparent color */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    pointer-events: none;
+}
+.fade:hover::before{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .image{
     background-color: aliceblue;
     padding: 1%;
-    height: 30vh;
-    overflow: hidden;
     border-radius: 1.5vw;
+    transition: ease-in-out 0.2s;
+    width: 100%;
 }
 
+.image:hover{
+    transform: scale(1.1);
+}
+.image .par{
+    margin-top: 7%;
+    margin-left: 7%;
+    z-index: 0px;
+    visibility: hidden;
+    position: absolute;
+    font-family: "Chakra Petch", sans-serif;
+    font-style: bold;
+    font-weight:bold;
+    z-index: 5;
+}
+.image:hover .par{
+    visibility: visible;
+    position:absolute;
+    transform: translate(50%, 350%);
+    color: rgb(255, 255, 255);
 
-
+}
 
 /* Line over about-us div or section */
 
@@ -204,7 +263,7 @@ body::before{
 }
 
 .about img{
-    height: 2vh;
+    height: 1vw;
     vertical-align: middle;
     padding-left: 4px;
     padding-right: 4px;
@@ -218,20 +277,42 @@ body::before{
     font-style: normal;
 }
 
-.socials{
-    padding-left: 272px;
-}
 
-.socials_2{
-    padding-left: 265px;
-}
+
 
 .about p{
     font-family: "Fira Sans Extra Condensed", sans-serif;
     font-weight: 250;
+    font-size: 70%;
     font-style: normal;
 }
 
 .about{
-    margin-left: 50px;
+    margin-left: 2%;
 }
+
+.about-us{
+    margin-bottom: 50px;
+}
+
+/* Copyright */
+.Copyright{
+    color: azure;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-size: 70%;
+}
+
+/* For Small Screen Size*/
+
+
+@media screen and (max-width : 600px) {
+    .contents{
+    flex-direction: column;
+    align-items: center;
+    }
+    body .main{
+        height: 550vw;
+    }
+    
+}
+
