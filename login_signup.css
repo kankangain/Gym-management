@@ -1,0 +1,267 @@
+body {
+    background-image: url(Images/background.jpg);
+    background-attachment:fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+body .main{
+    height: 74vh;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(91, 91, 91, 0.295);
+    z-index: -1;
+}
+.header{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(196,0,0,1) 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: 98vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.header .main-img{
+    height: 18.5vw;
+    vertical-align:top;
+    position: absolute;
+    top: 20%;
+    left: 55%;
+
+}
+
+.header .text{
+    color: azure;
+    margin-left: 5%;
+    font-family: "Monoton", sans-serif;
+    font-style: normal;
+    font-size: 4.8vw;
+    vertical-align: middle;
+}
+.text a{
+    text-decoration: none;
+    color: azure;
+}
+
+.insta img,.facebook img{
+    height: 2.5vh;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.logos{
+    margin-right: 2vw;
+    padding-left: 0.8vw;
+    padding-right: 0.8vw;
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    transform: scale(0.85);
+    vertical-align: middle;
+    transition: ease-in-out 0.3s;
+}
+
+.logos:hover{
+    transform: scale(1.12);
+}
+.Instagram:hover{
+    color: rgba(196,0,0,1);
+}
+.Facebook:hover{
+    color: rgba(196,0,0,1);
+}
+.insta a,.facebook a{
+    text-decoration: none;
+    text-shadow: 0 0 9px rgba(0, 0, 0, 0.4);
+    font-weight: bold;
+    font-size: 85%;
+    color: rgb(0, 0, 0);
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
+}
+
+.nav-bar{
+    display: flex;
+    background-color: rgba(240, 248, 255, 1);
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    font-size: 85%;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: black;
+    transition: ease-in-out 0.2s;
+    padding: 4px;
+}
+
+.homepage:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.pictures:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.about_us:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.login:hover{
+    transform: scale(1.2);
+    font-weight: 900;
+    color: rgba(196,0,0,1);
+}
+
+.contents .main-img{
+    width: 20vw;
+    margin: 20px;
+}
+b{
+    text-align: center;
+    font-size: vw;
+    font-weight: bold;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: azure;
+}
+.label{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: azure;
+}
+h1{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    box-shadow: black;
+}
+#align{
+    text-align: left;
+    display:inline-block;
+    width: 50vwpx;
+    text-align: center;
+    font-size: vw;
+    font-weight: bold;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    color: azure;
+}
+
+#btn{
+    background-color: rgb(157, 171, 67);
+    color: rgb(84, 81, 81);
+    border: rgb(36, 28, 28);
+    padding:10px 10px;
+    font-size:16px;
+    border-radius:10px;
+    text-align: center;
+    cursor: pointer;
+    width: 100;
+}
+.back{
+    text-decoration: none;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+.slide{
+   background-color: #a20f0f;
+   border: 2px solid rgb(119, 152, 56);
+   border-radius: 3%;
+   height:330px;width: 200px;
+   padding:25px 25px;
+   text-align:center;
+   cursor: pointer;
+   margin:auto;
+   margin-top: 5vh;
+   display: block;  
+   font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.line{
+    display: flex;
+    justify-content: center;
+}
+
+.border{
+    width: 92%;
+    border-radius: 50px; /* Set the width of your div */
+    background: rgb(29,29,29);
+    margin-top: 90px;
+    background: linear-gradient(90deg, rgba(29,29,29,0) 0%, rgba(255,0,0,1) 50%, rgba(62,0,0,0) 100%); /* Just for visualization */
+    padding: 2px;
+}
+
+.about-us p{
+    color: azure;
+    text-decoration: none;
+
+}
+
+.about img{
+    height: 1vw;
+    vertical-align: middle;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.about-us a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    font-family: "Chakra Petch", sans-serif;
+    font-style: normal;
+}
+
+
+
+
+.about p{
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-weight: 250;
+    font-size: 70%;
+    font-style: normal;
+}
+
+.about{
+    margin-left: 2%;
+}
+
+.about-us{
+    margin-bottom: 50px;
+}
+
+/* Copyright */
+.Copyright{
+    color: azure;
+    font-family: "Fira Sans Extra Condensed", sans-serif;
+    font-size: 70%;
+}
