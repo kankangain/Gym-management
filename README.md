@@ -1,13 +1,13 @@
-<h1 align="center">Hi ðŸ‘‹, I'm Kankan Gain</h1>
+<h1 align="center">Hi , I'm Kankan Gain</h1>
 <h3 align="center">A passionate frontend developer from India</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=kankan10&label=Profile%20views&color=0e75b6&style=flat" alt="kankan10" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=kankan10" alt="kankan10" /></a> </p>
 
-- ðŸ”­ Iâ€™m currently working on [oxxyfintess](https://github.com/kankan10/Gym-management)
+- I'm currently working on [oxxyfintess](https://github.com/kankan10/Gym-management)
 
-- ðŸŒ± Iâ€™m currently learning **Javascript, React js, scss**
+- I'm currently learning **Javascript, React js, scss**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
